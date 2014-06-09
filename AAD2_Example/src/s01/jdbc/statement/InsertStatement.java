@@ -22,6 +22,8 @@ public class InsertStatement {
             int rt = stm.executeUpdate("INSERT INTO Classes(ClassName, Location) VALUES('GC0902', 'FU-HN')");
             if(rt>0){
                 System.out.println("INSERT complete!");
+            }else{
+                System.out.println("Can't insert to table");
             }
         } catch (SQLException ex) {
             Logger.getLogger(SelectStatement.class.getName()).log(Level.SEVERE, null, ex);
